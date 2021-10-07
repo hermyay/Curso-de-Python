@@ -1,0 +1,2 @@
+# Crie um programa que simule o funcionamento de um caixa electronico. No inicio pergunte ao usuario qual sera' o valor a ser sacado (numero inteiro) e o programa vai informar quantas cedulas de cada valor serao entregues.
+# OBS: Considere que o caixa possui cedulas de MZN50, MZN20, MZN10 e MZN1.
