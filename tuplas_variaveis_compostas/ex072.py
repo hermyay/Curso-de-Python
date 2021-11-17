@@ -14,7 +14,7 @@ while True:
     print("="*50)
     q = input("Deseja continuar?[S/N]: ").upper()
     print("="*50)
+    while q not in "SsnN":
+        q = input("Por favor, digite S para Sim ou N para Nao: ").upper()
     if q in "nN":
         break
-    elif q not in "SsnN":
-        print("Por favor, digite S para Sim e N para Nao: ").upper()
