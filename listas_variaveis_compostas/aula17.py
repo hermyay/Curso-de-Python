@@ -10,6 +10,7 @@ print(num)
 # Exemplo de adição de valores na Lista.
 num.append(7)
 print(num)
+
 # Exemplo da organização da Lista usando o método sort()
 #NB: O método sort(), organiza a Lista por ordem crescente (tratando-se de numeros) ou por ordem alfabética (tratando-se de palavras).
 num.sort()

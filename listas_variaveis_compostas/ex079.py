@@ -12,6 +12,7 @@ while True:
         perg = input(str("Por favor, digite Sim ou Nao.\nQuer continuar? [S/N]: ")).strip().upper()[0]
     if perg in "Nn":
         print("=-="*20)
+        valores.sort()
         print(f"Os numeros escolhidos foram: {valores}")
         break
 print("GAME OVER!")

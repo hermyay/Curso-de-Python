@@ -3,13 +3,30 @@
 print("=-="*10)
 print(f"{'O JOGO DO MAIOR E MENOR':^31}")
 print("=-="*10)
+
 valores = list()
-for c in range(1, 6):
-    valores.append(int(input("Digite um número: ")))
+for c in range(0, 5):
+    valores.append(int(input(f"Digite um número para a posicao {c}: ")))
+
+
 print("=-="*10)
 print(f"Digitou os seguintes valores: {valores}")
+
 maior = max(valores)
 menor = min(valores)
+
 print("=-="*10)
-print(f"O MAIOR valor digitado foi {max(valores)} e se encontra na {valores.index(maior)+1}ª posição.\nO MENOR valor digitado foi {min(valores)} e se encontra na {valores.index(menor)+1}ª posição.")
+print(f"O MAIOR valor digitado foi {max(valores)} e se encontra nas posiçoes",end=" ")
+
+# Se o valor digitado for igual a maior, ou seja, `a variavel que recebe o maior valor digitado, imprima a posicao desse valor, ou, posicoes desse valor.
+for i, v in enumerate(valores):
+    if v == maior:
+        print(f"{i}...",end=" ")
+print()
+
+print(f"O MENOR valor digitado foi {min(valores)} e se encontra nas posiçoes",end=" ")
+for i, v in enumerate(valores):
+    if v == menor:
+        print(f"{i}...",end="")
+print()
 print("=-="*10)

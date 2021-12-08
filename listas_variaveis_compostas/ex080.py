@@ -8,46 +8,45 @@ print(f"O valor {n} esta na ultima posicao.")
 n1 = int(input("Digite o segundo numero: "))
 valores.append(n1)
 if n1 > n:
-    print(f"O valor esta na ultima posicao.")
-else:
-    print(f"O valor esta na primeira posicao.")
-
+    print(f"O valor {n1} esta na ultima posicao.")
+if n1 < n:
+    print(f"O valor {n1} esta na primeira posicao.")
 n2 = int(input("Digite o terceiro valor: "))
 valores.append(n2)
 if n2 > n1 > n:
-    print(f"O valor esta na ultima posicao")
+    print(f"O valor {n2} esta na ultima posicao")
 elif n1 > n2 < n:
-    print("O valor esta na segunda posicao.")
+    print(f"O valor {n2} esta na segunda posicao.")
 elif n2 < n1 < n:
-    print("O valor esta na primeira posicao.")
+    print(f"O valor {n2} esta na primeira posicao.")
 else:
-    print("O valor esta na terceira posicao.")
+    print(f"O valor {n2} esta na terceira posicao.")
 
 n3 = int(input("Digite o quarto valor: "))
 valores.append(n3)
 if n3 > n2 > n1 > n:
-    print("O valor esta na ultima posicao.")
-elif n2 > n3 < n1 < n:
-    print("O valor esta na terceira posicao.")
-elif n2 > n1 > n3 < n:
-    print("O valor esta na segunda posicao.")
+    print(f"O valor {n3} esta na ultima posicao.")
+elif n3 < n2 > n1 > n:
+    print(f"O valor {n3} esta na terceira posicao.")
+elif n3 < n2 < n1 > n:
+    print(f"O valor {n3} esta na segunda posicao.")
 elif n3 < n2 < n1 < n:
-    print("O valor esta na primeira posicao.")
-else:
-    print("O valor esta na quarta posicao")
+    print(f"O valor {n3} esta na primeira posicao.")
+elif n3> n2 < n1 < n:
+    print(f"O valor {n3} esta na quarta posicao")
 
 n4 = int(input("Digite o quinto valor: "))
 valores.append(n4)
 if n4 > n3 > n2 > n1 > n:
-    print("O valor esta na ultima posicao.")
+    print(f"O valor {n4} esta na ultima posicao.")
 elif n3 > n2 > n4 > n1 > n:
-    print("O valor esta na terceira posicao.")
+    print(f"O valor {n4} esta na terceira posicao.")
 elif n3 > n4 > n2 > n1 > n:
-    print("O valor esta na quarta posicao.")
+    print(f"O valor {n4} esta na quarta posicao.")
 elif n3 > n2 > n1 > n4 < n:
-    print("O valor esta na segunda posicao.")
+    print(f"O valor {n4} esta na segunda posicao.")
 else:
-    print("O valor esta na primeira posicao.")
+    print(f"O valor {n4} esta na primeira posicao.")
 print(valores)
 
 '''
