@@ -18,7 +18,7 @@ while True:
             menor = dados[1]
     lista.append(dados[:])
     dados.clear()
-    perg = str(input("Para continuar, digite [S]\nPara terminar digite [N]: "))
+    perg = str(input("Para continuar, digite [S]\nPara terminar digite [N]\n: "))
     if perg in "Nn":
         break
 print("-=-"*20)
