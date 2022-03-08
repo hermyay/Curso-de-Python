@@ -15,5 +15,5 @@ ranking = sorted(jogadores.items(), key=itemgetter(1), reverse=True)
 print("Ranking dos jogadores:")
 
 for p, r in enumerate(ranking):
-    print(f"Em {p}º lugar: {r[0]} com {r[1]}")
+    print(f"Em {p+13}º lugar: {r[0]} com {r[1]}")
     sleep(2)
