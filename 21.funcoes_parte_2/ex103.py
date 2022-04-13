@@ -5,9 +5,10 @@ def ficha(nome, golos):
     golos = (input("Numero de Golos: "))
     if nome in "":
         nome = "desconhecido"
-    if golos.isnumeric():
-        golos = int(0)
+    if golos == "":
+        golos = 0
     return nome,golos
+
 
 saida = ficha("nome", "golos")
 print("-=-"*15)

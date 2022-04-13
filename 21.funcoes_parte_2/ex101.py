@@ -1,11 +1,13 @@
-# Crie um programa que tenha uma funcao chamada voto() que vai receber como parametro o ano de nascimento de uma pessoa, retornando um valor literal indicando se uma pessoa tem voto NEGADO, OPCIONAL ou OBRIGATORIO nas eleicoes.
+# Crie um programa que tenha uma funcao chamada voto()
+# que vai receber como parametro o ano de nascimento de uma pessoa,
+# retornando um valor literal indicando se uma pessoa tem voto
+# NEGADO, OPCIONAL ou OBRIGATORIO nas eleicoes.
 
-def voto(ano,idade,cond):
+def voto(ano = 0,idade = 0,cond = " "):
     '''Calculo sobre permissoes de votacao nas eleicoes do ano 2022'''
-    
-    ano = int(input("Ano de Nascimento: "))
-    idade = 2022-ano
-    cond = " "
+    from datetime import date
+    actualdate = date.today().year
+    idade = actualdate-ano
     if idade < 18:
         cond = "NEGADO"
     elif idade < 65:
@@ -14,10 +16,12 @@ def voto(ano,idade,cond):
         cond = "OPCIONAL"
     return cond,idade,ano
 
-print("-=-"*30)
+
+# Programa Principal
+print("-=-"*20)
 nome = str(input("Nome: "))
-saida = voto("ano","idade","cond")
-print("-=-"*30)
+data = int(input("Ano de nascimento: "))
+saida = voto(data)
+print("-=-"*20)
 print(f"Saudacoes, {nome.title()}!\nVoce tem: {saida[1]} anos.\nO seu VOTO e': {saida[0]}")
-print("-=-"*30)
-print(voto())
+print("-=-"*20)
