@@ -1,5 +1,4 @@
-# Crie um programa que tenha a funcao leiaInt(), que vai funcionar de forma semelhante 'a funcao input() do Python,
-# so que fazendo a validacao para aceitar apenas um valor numerico. Ex: n = leiaInt('Digite um n')
+# Crie um programa que tenha a funcao leiaInt(), que vai funcionar de forma semelhante 'a funcao input() do Python,so que fazendo a validaço para aceitar apenas um valor numerico. Ex: n = leiaInt('Digite um n')
 
 def leiaInt(msg):
     ok = False

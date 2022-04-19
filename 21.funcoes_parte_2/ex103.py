@@ -7,6 +7,7 @@ def ficha(nome, golos):
         nome = "desconhecido"
     if golos == "":
         golos = 0
+
     return nome,golos
 
 
