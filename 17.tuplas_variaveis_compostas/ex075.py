@@ -23,9 +23,9 @@ else:
 print("=-="*20)
 print("Os valores pares sao: ",end="")
 if val1 % 2 == 0: print(val1,end=", ")
-if val2 % 2 == 0: print(val2,end=", ")
-if val3 % 2 == 0: print(val3,end=", ")
-if val4 % 2 == 0: print(val4)
+elif val2 % 2 == 0: print(val2,end=", ")
+elif val3 % 2 == 0: print(val3,end=", ")
+elif val4 % 2 == 0: print(val4)
 else: print("Nao ha valores pares.") # Este metodo nao e' 100% eficaz.
 
 # OUTRA FORMA DE RESOLUCAO DO EXERCICIO
