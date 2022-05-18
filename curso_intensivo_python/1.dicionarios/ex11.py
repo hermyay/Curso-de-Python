@@ -1,0 +1,1 @@
+# Extensoes: Estamos trabalhando agora com exemplos complexos o bastante para poderem ser estendidos de varias maneiras. Use um dos programas de exemplo deste capitulo e estenda-o acrescentando novas chaves e valores, alterando o contexto do programa ou melhorando a formatacao da saida.
