@@ -13,6 +13,7 @@ second_album = make_album('ColdPlay', 'Viva La Vida')
 print(second_album)
 third_album = make_album('Eminem', 'unknown')
 print(third_album)
-albuns = first_album, second_album, third_album
+total_albuns = first_album, second_album, third_album
 
-print(albuns)
+print(total_albuns)
+print(total_albuns[0])
