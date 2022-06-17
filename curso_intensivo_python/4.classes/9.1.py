@@ -2,10 +2,22 @@
 
 # PS: A classe Restaurant se encontra no Modulo restaurant.py. o mesmo foi importado na resolucao deste exercicio. 
 
-from restaurant import Restaurant
+class Restaurant():
+    """Um restaurante."""
+    def __init__(self, name, type):
+        """Atributos do restaurante."""
+        self.name = name
+        self.type = type
+    
+    def describle_restaurant(self):
+        print(f"\tNAME: {self.name.title()}.\n\tTYPE: {str(self.type)}.")
 
-my_restaurant = Restaurant('iFood', 12)
+    def open_restaurant(self):
+        print(f"The restaurant it's now Open!")
+
+restaurant = Restaurant('iFood', 'vegan')
 print("=="*20)
-my_restaurant.describle_restaurant()
-my_restaurant.open_restaurant()
+print(f"My restaurant name is {restaurant.name}.\nIt's a {restaurant.type} restaurant.")
+restaurant.describle_restaurant()
+restaurant.open_restaurant()
 print("=="*20)

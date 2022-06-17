@@ -2,15 +2,12 @@
 from restaurant import Restaurant
 
 print("=="*20)
-your_restaurant = Restaurant("melhor pizza", 10)
+your_restaurant = Restaurant("melhor pizza", "take away")
 your_restaurant.describle_restaurant()
-your_restaurant.open_restaurant()
 print("=="*20)
-edgar_restaurant = Restaurant('mangancas', 45)
+edgar_restaurant = Restaurant('mangancas', 'vegan')
 edgar_restaurant.describle_restaurant()
-edgar_restaurant.open_restaurant()
 print("=="*20)
-cobica_restaurant = Restaurant('dos cotas', 99)
+cobica_restaurant = Restaurant('dos cotas', 'regular')
 cobica_restaurant.describle_restaurant()
-cobica_restaurant.open_restaurant()
 print("=="*20)

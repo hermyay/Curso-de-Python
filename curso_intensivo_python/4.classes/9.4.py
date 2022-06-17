@@ -3,56 +3,45 @@
 # Acrescente um metodo chamado increment_number_served() que permita incrementar o numero de clientes servidos. Chame esse metodo com qualquer numero que voce quiser e que represente quantos clientes foram atendidos, por exemplo, em um dia de funcionamento.
 
 class Restaurant():
-    """Um restaurante."""
-    def __init__(self, restaurant_name, cuisine_type):
-        """Atributos do restaurante."""
-        self.restaurant_name = restaurant_name
-        self.cuisine_type = cuisine_type
+    """Criacao de um restaurante."""
+    def __init__(self, name, type):
+        """Atributos do restaurante: name e type, valor default => number_served = 0."""
+        self.name = name
+        self.type = type
+        # Atributo valor default 0
         self.number_served = 0
-    
-    def describle_restaurant(self):
-        print(f"The Restaurant it's named as {self.restaurant_name.title()}\nWith {str(self.cuisine_type)} cuisine.\nThe restaurant has served {self.number_served} people.")
         
+    def describle_restaurant(self):
+        """Descricao do nome e tipo de restaurante"""
+        print(f"\tNAME: {self.name}.\n\tTYPE: {str(self.type)}.".title())
 
     def open_restaurant(self):
-        print(f'The "{self.restaurant_name.title()}" restaurant its now Open!')
+        """Mensagem elegante de que o restaurante esta' aberto."""
+        print(f"The restaurant it's now Open!")
+        
+    # Metodo de definicao do numero de clientes atendidos
+    def set_number_served(self, set):
+        """Definicao de numero de clientes atendidos. Um atributo."""
+        self.number_served = set
+        
+    # Metodo de incrementacao do numero de clientes
+    def increment_number_served(self, new_ones):
+        """Incrementacao do numero de clientes. Um atributo."""
+        self.number_served += new_ones
 
-    def set_number_served(self, set_number):
-        if set_number >= self.number_served:
-            self.number_served = set_number
-            print(f"The Restaurant it's named as {self.restaurant_name.title()}\nWith {str(self.cuisine_type)} cuisine.\nThe restaurant has served {self.number_served} people.")
-        else:
-            print(f"The Restaurant it's named as {self.restaurant_name.title()}\nWith {str(self.cuisine_type)} cuisine.\nERROR: The numbers of served clients can only increase.\nThe {set_number} clients served are uncontible.")
-    def increment_number_served(self, clients):
-        self.number_served += clients
-
-restaurant = Restaurant('Good Food', 17)
-print(restaurant.describle_restaurant())
-'''
-restaurant.number_served = 45
-print(restaurant.describle_restaurant())
-
+# Instancia restaurant
+restaurant = Restaurant('nirvana','vegan')
 print("=="*20)
-
-restaurant.number_served = 60
-print(restaurant.describle_restaurant())
-
-print("=="*20)
-
-restaurant.set_number_served(59)
-
-print("=="*20)
-
-restaurant.set_number_served(90)
-
-print("=="*20)
-
-
-while restaurant.set_number_served(0):
-    client = input("New client number: ")
-    question = input(str("Another one? "))
-    if question in "nN":
-        break
-
-restaurant.set_number_served(client)
-'''
+# Apresentacao de clientes atendidos
+print(restaurant.number_served)
+# Mudanca do valor
+restaurant.number_served = 20
+# Segunda apresentacao de clientes atendidos
+print(restaurant.number_served)
+# Chamada do metodo de definicao
+restaurant.set_number_served(40)
+# Mostra do valor do metodo de definicao
+print(restaurant.number_served)
+# Chamada do metodo de incremento
+restaurant.increment_number_served(18)
+print(f"Today was served {restaurant.number_served} clients.")
