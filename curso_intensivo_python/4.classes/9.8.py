@@ -1,5 +1,4 @@
-"""Criacao de uma conta do usuario | Um usuario administrador | Previlegios do usuario administrador."""
-
+# Privilegios: Escreva uma classe Privileges separada. A classe deve ter um atributo privileges que armazene uma lista de strings conforme descrita no Exercicio 9.7. Transfira o metodo show_privileges() para essa classe. Crie uma instancia de Privileges como um atributo da classe Admin. Crie uma nova instancia de Admin e use metodo para exibir os privilegios.
 class User():
     """Usuarios do site."""
     def __init__(self, first_name, last_name, age, location, gender):
@@ -53,3 +52,6 @@ class Privileges():
         for previlege in self.privileges:
             print(f"--> The Administrator, {previlege}.")
         print("=="*20)
+        
+privilege_user = Admin('edgar', 'augusto', 15, 'das mangas', 'male', Privileges())
+privilege_user.prev.show_priveleges()
