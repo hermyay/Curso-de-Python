@@ -1,0 +1,1 @@
+# Modulo Python da semana: Um excelente recurso para explorar a biblioteca-padrao de Python e' um site chamado Python Module of the Week (Modulo Python da semana). Acesse http://pymotw.com/ e observe a tabela de conteudo. Encontre um modulo que pareca ser inretessante e leia a sua descricao ou explore a documentacao dos modulos collections e random.
