@@ -1,0 +1,4 @@
+Em python podemos aprender a programacao orientada ao objecto.
+Podemos criar, tambem, as estruturas de repeticao for e while em python.
+Criar dicionarios, listas e tuplas em python e' possivel para armazenar dados.
+Podemos criar definicoes e funcoes com python.

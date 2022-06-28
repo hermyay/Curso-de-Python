@@ -4,11 +4,13 @@ x = randint(1, 6)
 # Crie uma classe Die com um atributo chamado sides, cujo valor default e' 6. Escreva um metodo chamado roll_die() que exiba um numero aleatorio entre 1 e o numero de lados do dado. Crie um dado de seis lados e lance-o dez vezes. Crie um dado de dez lados e outro de vinte lados. Lance cada dado dez vezes.
 
 class Die():
+    """Simula o lancamento de um dado de seis, dez e vinte lados."""
     def __init__(self, sides = 6):
         self.sides = sides
     print("=="*20)
     
     def roll_die(self):
+        """Lancamento do dado de seis, dez e vinte lados para o sorteio aleatorio de um de seus lados."""
         print(f"Aleatory number betwen 1 - 6: {randint(1, self.sides)}")
         print("="*40)
         
@@ -32,6 +34,7 @@ class Die():
             print(f"{self.c}",end=' - ')
         print("\n")
         print("=="*20)
-            
+           
+# Programa principal. 
 dados = Die()
 dados.roll_die()
